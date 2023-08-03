@@ -52,7 +52,8 @@ GENET: Unleashing the Power of Side Information for Recommendation via Hypergrap
 pip install -r requirements.txt         # Install requirements with pip
 ```
 ### Datasets
-We have provide the preprocessed Books datasets in the data/ folder. Please unzip the amazon.zip file before running the code.
+We have provided the preprocessed Books datasets in the data/ folder. Please unzip the amazon.zip file before running the code.
+We have also provided the pre-trained model in the save/model/ folder. Please unzip them.
 
 
 ### Quick start
