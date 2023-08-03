@@ -1,0 +1,60 @@
+alembic==1.10.2
+brotlipy==0.7.0
+certifi @ file:///croot/certifi_1671487769961/work/certifi
+cffi @ file:///croot/cffi_1670423208954/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+cloudpickle==2.2.1
+cmaes==0.9.1
+colorlog==6.7.0
+contourpy==1.0.7
+cryptography @ file:///croot/cryptography_1677533068310/work
+cycler==0.11.0
+dhg==0.9.3
+docopt==0.6.2
+flit_core @ file:///croot/flit-core_1679397103445/work/source/flit_core
+fonttools==4.39.2
+future==0.18.3
+greenlet==2.0.2
+hyperopt==0.2.7
+idna @ file:///croot/idna_1666125576474/work
+importlib-resources==5.12.0
+joblib==1.2.0
+kiwisolver==1.4.4
+lion-pytorch==0.0.7
+Mako==1.2.4
+MarkupSafe==2.1.2
+matplotlib==3.7.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186066731/work
+mkl-service==2.4.0
+networkx==3.0
+numpy @ file:///croot/numpy_and_numpy_base_1672336185480/work
+optuna==3.1.0
+packaging==23.0
+pandas==1.5.3
+Pillow==9.4.0
+pipreqs==0.4.13
+py4j==0.10.9.7
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///croot/pyopenssl_1677607685877/work
+pyparsing==3.0.9
+PySocks @ file:///tmp/build/80754af9/pysocks_1605305812635/work
+python-dateutil==2.8.2
+pytz==2023.2
+PyYAML==6.0
+requests @ file:///croot/requests_1678709721434/work
+scikit-learn==1.2.2
+scipy==1.10.1
+seaborn==0.12.2
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+SQLAlchemy==2.0.7
+threadpoolctl==3.1.0
+torch==1.13.1
+torchaudio==0.8.0
+torchvision==0.9.0+cu111
+tqdm==4.65.0
+typing_extensions @ file:///croot/typing_extensions_1669924550328/work
+urllib3 @ file:///croot/urllib3_1673575502006/work
+wget==3.2
+yarg==0.1.9
+zipp==3.15.0
