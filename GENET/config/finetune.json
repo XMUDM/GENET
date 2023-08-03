@@ -1,0 +1,8 @@
+{
+    "dim_emb": 64,
+    "lr": 0.0005,
+    "batch_sz": 4096,
+    "epochs": 10,
+    "seed": 2023,
+    "cl_coef": 0.3
+}

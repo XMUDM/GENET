@@ -1,0 +1,12 @@
+{
+    "dim_emb": 64,
+    "lr": 0.0005,
+    "batch_sz": 4096,
+    "epochs": 100,
+    "seed": 2023,
+    "cl_gamma": 0.2,
+    "cl_coef": 0.1,
+    "ec_coef": 0.4,
+    "intra_weight": 0.005,
+    "inter_weight": 0.01
+}
