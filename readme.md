@@ -61,4 +61,3 @@ We have also provided the pre-trained model in the save/model/ folder. Please un
 python finetune/finetuning_gnn_signal.py   # Run a experiment, before that, please setup the root path of the dataset in the code.
 ```
 
-Experiments can be controlled with the **./experiments/tpch.json** file. For descriptions of the components and functioning, consult our paper.
