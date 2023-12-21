@@ -10,6 +10,8 @@ GENET: Unleashing the Power of Side Information for Recommendation via Hypergrap
 │   ├── finetune.json
 │   ├── finetune_seq.json
 │   └── pretrain.json
+── data
+│   ├── data.zip
 ├── finetune
 │   ├── finetuning_fewshots.py
 │   ├── finetuning_gnn_signal.py
