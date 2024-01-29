@@ -76,7 +76,6 @@ def preprocessRatingSeq():
     num_u = max(df['user']) + 1
     df['item'] = df['item'] - num_u
     df = df.sort_values(by=['user','time'])
-    # 每一个user只保留最后30条记录
     df = df.groupby('user').tail(30)
     df.to_csv('../data/amazon/book_ratings_seq.txt',header=None,index=False,sep='\t')
 
