@@ -143,23 +143,22 @@ def foursquareDR():
 
     df_friend['user1'] = df_friend['user1'].map(dict(zip(df['user'],df['remap_user'])))
     df_friend['user2'] = df_friend['user2'].map(dict(zip(df['user'],df['remap_user'])))
-    # 去除user1和user2中的空值
+
     df_friend = df_friend.dropna()
-    # 将user1和user2的值转换为int类型
+
     df_friend['user1'] = df_friend['user1'].astype(int)
     df_friend['user2'] = df_friend['user2'].astype(int)
-    # 写出映射后的朋友关系表
+
     df_friend.to_csv('../data/foursquare/loc-foursquare_edges_remap.txt',header=0,index=0,sep='\t')
 
-    # 读取用户表
     df_user = pd.read_csv('../data/foursquare/users.csv',sep='\t')
-    # 将user的值根据df中的user和remap_user进行映射
+ 
     df_user['user'] = df_user['user'].map(dict(zip(df['user'],df['remap_user'])))
-    # 去除user中的空值
+    
     df_user = df_user.dropna()
-    # 将user的值转换为int类型
+
     df_user['user'] = df_user['user'].astype(int)
-    # 写出映射后的用户表
+
     df_user.to_csv('../data/foursquare/user_remap.txt',header=0,index=0,sep='\t')
 
 
