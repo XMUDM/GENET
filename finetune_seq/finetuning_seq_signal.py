@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
     # Set the parameters to train.
     params = list(net_prompt.parameters())+[u_embs,i_embs]
-    # 设置其他
+
     data_loader = 0
     # The initial learning rate is 0.005, which is to speed up the migration to downstream tasks and train for 3epoch.
     # Then train normally for 7 epochs, and the learning rate is 0.0005
