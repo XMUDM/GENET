@@ -58,7 +58,7 @@ def train(net_ds,data_loader, optimizer, epoch, criterion):
             torch.matmul(emb_norm[pos], emb_norm[pos].transpose(1, 0)) / 0.2),
             dim=-1)  # [batch_size]
         loss_con2 = -torch.mean(torch.log(pos_u_intra / (pos_u_intra + neg_u_intra)))
-        # 加入正则化
+
         loss1 = criterion(pos_scores,neg_scores)
         # print(loss1,loss_con)
         # loss = loss1+0.005*loss_con+0.005*loss_con2
@@ -74,7 +74,7 @@ def train(net_ds,data_loader, optimizer, epoch, criterion):
 def seed_torch(seed=2022):
     print("Random seed：",seed)
     random.seed(seed)
-    os.environ['PYTHONHASHSEED'] = str(seed)  # 为了禁止hash随机化，使得实验可复现
+    os.environ['PYTHONHASHSEED'] = str(seed)  
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     epochs = config['epochs']
     device = torch.device("cuda:6" if torch.cuda.is_available() else "cpu")
     val_freq = config['val_freq']
-    #  设置logger
+
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     fmt = logging.Formatter('%(asctime)s: [ %(message)s]','%Y/%m/%d %H:%M:%S')
